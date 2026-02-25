@@ -128,7 +128,7 @@ from requests.auth import HTTPBasicAuth
 @app.route('/api/mpesa_payment', methods=['POST'])
 def mpesa_payment():
     if request.method == 'POST':
-        # Extract POST Values sent
+    # Extract POST Values sent
         amount = request.form['amount']
         phone = request.form['phone']
 
